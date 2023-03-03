@@ -3,11 +3,43 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <body>
 
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+  <h2>Bar Chart</h2>
+  <canvas id="myMusic" style="width: 600px; max-width: 600px; display: block; height: 500px;" width="1200" height="600" class="chartjs-render-monitor"></canvas>
+
+  <script>
+  var xValues = ["Radiohead", "Nick Cave & the Bad Seeds", "David Bowie", "Other Artists"];
+  var yValues = [15,25,35,6];
+  var barColors = ["red", "green","blue","orange"];
+      
+      new Chart("myMusic", {
+        type: "bar",
+        
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: {display: false},
+          title: {
+            display: true,
+            text: "Music I Own"
+          }
+        }
+      });
+      </script>
+
+<h2>Bar Chart</h2>
+    <canvas id="myMusic" style="width: 600px; max-width: 600px; display: block; height: 500px;" width="1200" height="600" class="chartjs-render-monitor"></canvas>
+
+<h2>Pie Charts: </h2>
+<canvas id="myChart3" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = ["BTS", "TXT", "ATEEZ", "The Boyz", "Itzy"];
-var yValues = [36, 17, 22, 26, 12];
+var xValues = ["Fiction Books", "Non-Fiction Books", "DVD", "Magazines", "Pencils"];
+var yValues = [15, 29, 24, 40, 80];
 var barColors = [
   "#b91d47",
   "#00aba9",
@@ -16,7 +48,7 @@ var barColors = [
   "#1e7145"
 ];
 
-new Chart("myChart", {
+new Chart("myChart3", {
   type: "pie",
   data: {
     labels: xValues,
@@ -28,42 +60,12 @@ new Chart("myChart", {
   options: {
     title: {
       display: true,
-      text: "Most K-Pop albums downloaded"
+      text: "Number of library items not returned per week"
     }
   }
 });
 </script>
-<h2>Most Played K-Pop Songs</h2>
-<canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
 
-<script>
-var xValues = ["Mikrokosmos ", "Opening Sequence", "Wave", "Roar", "Mafia in the Morning"];
-var yValues = [55, 49, 44, 24, 15];
-var barColors = [
-  "#b91d47",
-  "#00aba9",
-  "#2b5797",
-  "#e8c3b9",
-  "#1e7145"
-];
-
-new Chart("myChart", {
-  type: "pie",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "Most Played K-Pop Songs"
-    }
-  }
-});
-</script>
 
 </body>
 </html>
