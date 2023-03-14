@@ -6,64 +6,65 @@
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = ["BTS", "TXT", "ATEEZ", "The Boyz", "Itzy"];
-var yValues = [36, 17, 22, 26, 12];
-var barColors = [
-  "#b91d47",
-  "#00aba9",
-  "#2b5797",
-  "#e8c3b9",
-  "#1e7145"
-];
-
-new Chart("myChart", {
-  type: "pie",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "Most K-Pop albums downloaded"
+  var xValues = ["BTS", "TXT", "ATEEZ", "The Boyz", "Itzy"];
+  var yValues = [36, 17, 22, 26, 12];
+  var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+  ];
+  
+  new Chart("myChart", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Most K-Pop albums downloaded"
+      }
     }
-  }
-});
-</script>
+  });
+  </script>
+
 
 <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = ["Mikrokosmos ", "Opening Sequence", "Wave", "Roar", "Mafia in the Morning"];
-var yValues = [55, 49, 44, 24, 15];
-var barColors = [
-  "#b91d47",
-  "#00aba9",
-  "#2b5797",
-  "#e8c3b9",
-  "#1e7145"
-];
-
-new Chart("myChart", {
-  type: "pie",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "Most Played K-Pop Songs"
+  var xValues = ["Mikrokosmos", "Opening Sequence", "Wave", "Roar", "Mafia in the Morning"];
+  var yValues = [55, 49, 44, 24, 15];
+  var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+  ];
+  
+  new Chart("myChart", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "World Wide Wine Production 2018"
+      }
     }
-  }
-});
-</script>
+  });
+  </script>
 
 </body>
 </html>
